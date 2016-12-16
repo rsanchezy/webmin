@@ -15,7 +15,7 @@ RUN a2enmod ssl && a2ensite default-ssl
 RUN chown -R www-data /var/www/html
 RUN mkdir /var/moodledata
 RUN chown -R www-data:www-data /var/moodledata
-RUN apt install ssh
+
 
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 
